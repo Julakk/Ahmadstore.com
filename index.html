@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+    <header>
+        <div class="logo">
+            <div><img src="logo.png"/></div>
+            <div class="nama">JULAK</div>
+            <div class="store">STORE</div>
+        </div>
+        <h1 class="hdjudul">Top-Up Game Murah & Cepat</h1>
+    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmadstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="game-list">
+        <h2>Pilih Game yang Ingin Anda Top-Up</h2>
+        <div class="games">
+            <div class="game-item" onclick="goToTopup('Mobile Legends')">
+                <img src="mlbb.png" alt="Mobile Legends">
+                <p>Mobile Legends</p>
+            </div>
+            <div class="game-item" onclick="goToTopup('Free Fire')">
+                <img src="ff.png" alt="Free Fire">
+                <p>Free Fire</p>
+            </div>
+            <div class="game-item" onclick="goToTopup('PUBG Mobile')">
+                <img src="pubg.png" alt="PUBG Mobile">
+                <p>PUBG Mobile</p>
+            </div>
+            <div class="game-item" onclick="goToTopup('Genshin Impact')">
+                <img src="genshin.png" alt="Genshin Impact">
+                <p>Genshin Impact</p>
+            </div>
+            <div class="game-item" onclick="goToTopup('Call of Duty Mobile')">
+                <img src="codm.png" alt="Call of Duty Mobile">
+                <p>Call of Duty Mobile</p>
+            </div>
+            <div class="game-item" onclick="goToTopup('Valorant')">
+                <img src="valorant.png" alt="Valorant">
+                <p>Valorant</p>
+            </div>
+            <div class="game-item" onclick="goToTopup('Honkai Star Rail')">
+                <img src="hsr.png" alt="Honkai Star Rail">
+                <p>Honkai Star Rail</p>
+            </div>
+            <div class="game-item" onclick="goToTopup('League of Legends')">
+                <img src="lol.png" alt="League of Legends">
+                <p>League of Legends</p>
+            </div>
+            <div class="game-item" onclick="goToTopup('FC Moblie')">
+                <img src="fcmobile.png" alt="FC Mobile">
+                <p>FC Mobile</p>
+            </div>
+            <div class="game-item" onclick="goToInfo('Efootball Pes 2025')">
+                <img src="efootball.png" alt="Efootball Pes 2025">
+                <p>Efootball Pes 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 TopUpGame. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script>
+        function goToTopup(game) {
+            window.location.href = `topup.html?game=${encodeURIComponent(game)}`;
+        }
+
+        function goToInfo(game) {
+            window.location.href = `info.html?game=${encodeURIComponent(game)}`;
+        }
+    </script>
+</body>
+</html>
